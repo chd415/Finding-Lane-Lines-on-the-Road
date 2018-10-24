@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 In this project, we are asked to write the code ourselves to find the lines of a self-driving car initially based on the still pictures and then using the video provided. Even though analysising videos seems to be harder, but the pipeline of the whole process should be same. The video is just a sum of the still pictures. So I will take the still picture as an example.
 
 Initiall, we are given this picture which does not have any ditected lines yet:
-![Initial picture][test_images/solidWhiteRight.jpg]
+<img src="test_images/solidWhiteRight.jpg" width="480" />
 
 ---
 
@@ -30,8 +30,7 @@ Initiall, we are given this picture which does not have any ditected lines yet:
 5. based on the region detected in step4, to get the lines only in this certain region: line_image = hough_lines(masked, 3, np.pi/180, 20, 15, 20)
 6. finally, show the picture with the initial one and this mask with the detected lines: result = weighted_img(line_image, image).
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![Output picture][test_images_out/outsolidWhiteCurve]
+<img src="test_images_out/outsolidWhiteCurve.jpg" width="480" />
 
 
 ### 2. Identify potential shortcomings with your current pipeline
